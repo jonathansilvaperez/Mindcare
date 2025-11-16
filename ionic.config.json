@@ -1,0 +1,7 @@
+{
+  "name": "mindcareApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

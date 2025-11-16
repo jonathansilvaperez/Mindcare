@@ -1,0 +1,30 @@
+:root {
+  /** Colores principales MindCare **/
+  --ion-color-primary: #2a9d8f;
+  --ion-color-primary-rgb: 42, 157, 143;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #238578;
+  --ion-color-primary-tint: #45b3a3;
+
+  --ion-color-secondary: #457b9d;
+  --ion-color-secondary-rgb: 69, 123, 157;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #3a6985;
+  --ion-color-secondary-tint: #5b8fb0;
+
+  --ion-color-light-bg: #f4fbfc;
+}
+
+/* Fondo general suave */
+ion-app,
+ion-content {
+  --background: var(--ion-color-light-bg);
+}
+
+/* Tipografía base */
+:root {
+  --ion-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+}

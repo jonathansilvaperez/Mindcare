@@ -1,0 +1,60 @@
+<ion-content class="home-bg" [fullscreen]="true">
+  <div class="home-wrapper">
+    <!-- ENCABEZADO -->
+    <header class="home-header">
+      <div>
+        <p class="hello">Hola, Jonathan 👋</p>
+        <h1 class="main-title">¿Cómo te sientes hoy?</h1>
+      </div>
+    </header>
+
+    <!-- TARJETA ESTADO DE ÁNIMO -->
+    <section class="card estado-card">
+      <p class="estado-label">Estado de ánimo actual</p>
+      <p class="estado-valor">{{ estado }}</p>
+
+      <div class="barra-estado">
+        <div class="barra-relleno"></div>
+      </div>
+
+      <p class="estado-detalle">
+        Recuerda que es normal sentirse así. Vamos a trabajar en tu bienestar.
+      </p>
+    </section>
+
+    <!-- BOTONES PRINCIPALES -->
+    <section class="btn-list">
+      <ion-button
+        expand="block"
+        class="btn-main"
+        routerLink="/autoevaluacion"
+      >
+        Realizar autoevaluación
+      </ion-button>
+
+      <ion-button
+        expand="block"
+        class="btn-secondary"
+        routerLink="/respiracion"
+      >
+        Practicar ejercicios de respiración
+      </ion-button>
+
+      <ion-button
+        expand="block"
+        class="btn-secondary"
+        routerLink="/agenda"
+      >
+        Ver agenda y recordatorios
+      </ion-button>
+
+      <ion-button
+        expand="block"
+        class="btn-ghost"
+        routerLink="/directorio"
+      >
+        Directorio de ayuda
+      </ion-button>
+    </section>
+  </div>
+</ion-content>

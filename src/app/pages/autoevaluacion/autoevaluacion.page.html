@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true" class="auto-bg">
+  <div class="auto-wrapper">
+    <h1 class="title">Autoevaluación</h1>
+    <p class="subtitle">
+      En la última semana, ¿cómo te has sentido en general?
+    </p>
+
+    <div class="card">
+      <p class="label">Selecciona un número en la escala:</p>
+
+      <ion-segment class="scale" value="3">
+        <ion-segment-button value="1">
+          <ion-label>1</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="2">
+          <ion-label>2</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="3">
+          <ion-label>3</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="4">
+          <ion-label>4</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="5">
+          <ion-label>5</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+      <div class="scale-legend">
+        <span>1 = Muy mal</span>
+        <span>5 = Excelente</span>
+      </div>
+
+      <p class="note">
+        (Solo cáscara de navegación: esta versión no guarda datos, es solo
+        maqueta funcional para la unidad).
+      </p>
+    </div>
+
+    <button class="mc-btn mc-btn-primary" routerLink="/home">
+      Volver al inicio
+    </button>
+  </div>
+</ion-content>
