@@ -154,3 +154,23 @@ Solución: reinstalar Angular CLI 16.
 
 Para desarrollar la aplicación MindCare, primero se creó la estructura base utilizando Ionic Angular Standalone. Luego se añadieron nuevos componentes como Autovalución y Respiración, cumpliendo con la exigencia de integrar al menos dos componentes nuevos dentro del proyecto. Cada componente se construyó con su archivo .ts, .html y .scss, y se integró en la navegación principal mediante app.routes.ts.
 Durante el desarrollo se planificó el diseño priorizando la simplicidad: navegación clara, botones grandes y procesos cortos para asegurar que la aplicación pueda usarse incluso en dispositivos con limitaciones de memoria o conectividad. Con esto se completó más del 50 % del contenido total requerido para la entrega final.
+
+---
+
+11. Generación del APK no firmado (Parte B)
+
+Como parte de la fase final del proyecto, se generó el archivo APK no firmado de la aplicación MindCare utilizando Capacitor y Android Studio. Para ello, primero se añadió la plataforma Android mediante los comandos estándar de Ionic:
+
+ionic capacitor add android
+ionic capacitor sync android
+ionic capacitor open android
+
+Con el proyecto abierto en Android Studio, se utilizó la opción:
+
+Build → Generate App Bundle(s) / APK(s) → Generate APK(s)
+
+La compilación se realizó correctamente, mostrando el mensaje “Build completed successfully”, y permitiendo localizar el archivo generado. El APK resultante corresponde a la versión debug (sin firma), cumpliendo con lo solicitado por la guía para esta unidad. El archivo quedó disponible en la ruta:
+
+android/app/build/outputs/apk/debug/app-debug.apk
+
+Finalmente, este APK fue añadido al repositorio Git del proyecto dentro de la carpeta /apk, cumpliendo con el requisito de incluir tanto el código de la aplicación como el archivo ejecutable generado.
