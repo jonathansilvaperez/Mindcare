@@ -107,6 +107,13 @@ Contactos esenciales para apoyo emocional.
 
 ## 6. Problemas enfrentados y soluciones
 
+✔ Problemas enfrentados durante el desarrollo 
+
+Durante la construcción de la aplicación surgieron varios inconvenientes técnicos. El primero fue una incompatibilidad entre Angular 17/20 y la versión de Ionic utilizada, lo que impedía ejecutar la aplicación. Esto se resolvió reinstalando Angular 16 y reconstruyendo las dependencias.
+Otro problema fue que la aplicación quedaba en blanco debido a que las rutas no estaban correctamente declaradas; esto se corrigió revisando y actualizando app.routes.ts.
+Finalmente, un error en el entorno indicaba que faltaba el builder de Angular Devkit. Esto se solucionó eliminando node_modules y reinstalando las dependencias desde cero.
+Superados estos puntos, la aplicación quedó funcionando correctamente con ionic serve.
+
 ### ❌ Conflicto Angular CLI fuera del workspace  
 Solución: reinstalar Angular 16, borrar node_modules y package-lock.json.
 
@@ -140,3 +147,10 @@ Solución: reinstalar Angular CLI 16.
 ## 9. Créditos
 
 **Desarrollador:** Jonathan Silva 
+
+---
+
+10. Desarrollo del proyecto (requerido por la unidad)
+
+Para desarrollar la aplicación MindCare, primero se creó la estructura base utilizando Ionic Angular Standalone. Luego se añadieron nuevos componentes como Autovalución y Respiración, cumpliendo con la exigencia de integrar al menos dos componentes nuevos dentro del proyecto. Cada componente se construyó con su archivo .ts, .html y .scss, y se integró en la navegación principal mediante app.routes.ts.
+Durante el desarrollo se planificó el diseño priorizando la simplicidad: navegación clara, botones grandes y procesos cortos para asegurar que la aplicación pueda usarse incluso en dispositivos con limitaciones de memoria o conectividad. Con esto se completó más del 50 % del contenido total requerido para la entrega final.
